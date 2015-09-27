@@ -1,0 +1,20 @@
+{
+  "name": "davidmckoyca",
+  "version": "1.0.0",
+  "description": "Personal website of David McKoy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "David McKoy",
+  "license": "ISC",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.15.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain davidmckoy.ca"
+    }
+  }
+}
