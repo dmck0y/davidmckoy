@@ -1,0 +1,21 @@
+doctype
+html
+  title David McKoy
+  head
+    link(rel="stylesheet" href="/main.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    script(src="https://use.typekit.net/ikz4trg.js")
+    script(type="text/javascript") 
+      ;try{Typekit.load({ async: true });}catch(e){}
+
+  body
+    header.layout-container.layout-container--light
+      div.site-header
+        span.site-header__logo David Mckoy
+
+    div.layout-container
+      != yield
+
+    div.layout-container
+    

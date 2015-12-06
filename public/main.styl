@@ -1,0 +1,60 @@
+@require '/node_modules/tachyons/src/_normalize.css'
+@require '/node_modules/tachyons/src/_media-queries.css'
+@require '/node_modules/tachyons/src/_base.css'
+@require '/node_modules/tachyons/src/_box-sizing.css'
+@require 'styles/colors'
+
+.layout-container
+  padding 0 2rem
+
+  &--light
+    background-color white
+
+body
+  font-family "sofia-pro-1", "sofia-pro-2", "Helvetica"
+  background #ececec
+  color dark-grey
+  margin 0
+ 
+.content 
+  padding-top 3rem
+   
+  .title 
+    font-size 4rem
+    line-height 1
+    position relative
+     
+    &:before 
+      content ''
+      display inline-block
+      position relative
+      background-color dark-grey
+      bottom 0.4rem
+      vertical-align middle
+      height 0.6rem
+      margin-right 1.5rem
+      width 76%; 
+    
+  .link-list
+    list-style none 
+    margin 8rem 0 0
+    padding 0
+    
+    &__item 
+      
+      & a
+        display block
+        color dark-grey
+        font-size 1.3rem
+        font-weight 300
+        padding .1rem .5rem .2rem
+        text-decoration none
+        transition all .3s ease
+
+        &:hover, &:focus
+          color gold 
+          background-color alpha(white, .4)
+
+
+@require 'styles/header'
+//@require 'styles/footer'
