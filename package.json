@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Personal website of David McKoy",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
+  "scripts": { 
+    "predev": "surge --project ./ --domain davidmckoy.ca", 
+    "dev": "harp server --port 5050",
+    "deploy": "surge ./www",
+    "build": "harp compile"
   },
   "author": "David McKoy",
   "license": "ISC",
